@@ -1,0 +1,27 @@
+# --- Core Frameworks --
+#langchain-openai==0.1.3 não fiz com a open ai por falta de dinheiro para pagar a api deles
+langchain==0.1.20
+langchain-community==0.0.38
+langchain-google-genai==1.0.3
+langchain-core==0.1.52
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.29
+streamlit==1.33.0
+python-dotenv==1.0.1
+# --- Interface & Web ---
+streamlit>=1.30.0
+python-dotenv>=1.0.0
+
+# --- Banco de Dados Vetorial & Dados ---
+lancedb>=0.5.0
+pyarrow>=14.0.0                  # Necessário para o funcionamento do LanceDB
+pandas>=2.0.0
+
+# --- Processamento de Texto & Embeddings ---
+sentence-transformers>=2.2.0     # Caso queira gerar embeddings locais no LanceDB
+pydantic>=2.0.0                  # Essencial para a estruturação das Tools no LangChain
+
+# --- Utilitários ---
+requests>=2.31.0                 # Para futuras integrações reais de Webhook (n8n/Make)
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
